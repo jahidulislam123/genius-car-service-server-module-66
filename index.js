@@ -119,6 +119,9 @@ run().catch(console.dir);
 app.get('/',(req,res)=>{
     res.send('running genius server');
 });
+app.getMaxListeners('/hero',(req,res)=>{
+   res.send('hero meets hero ku');
+})
 
 app.listen(port, () => {
     console.log('Listening to port ',port);
